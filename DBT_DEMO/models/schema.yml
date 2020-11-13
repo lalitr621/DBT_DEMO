@@ -1,0 +1,26 @@
+version: 2
+
+
+Sources:
+ - name: DEMO_DB
+   description: 'database in snowflake'
+   database: DEMO_DB
+   schema: SAMPLE_SCM
+   tables:
+     - name: SAMPLE_TABLE
+       description: 'test table'
+       columns:
+        - name: ID
+        - name: NAME
+        - name: SALARY
+
+
+
+
+models:
+  - name: test
+    description: 'new table/view'
+    columns:
+    - name: ID
+    - name: NAME
+    - name: SALARY
